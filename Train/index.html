@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket booking</title>
+    <script src="https://kit.fontawesome.com/8a86ba72c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="train.css">
+    <link rel="icon" href="railways.png">
+
+</head>
+<style>
+    .navbar{
+        background-color: azure;
+    }
+    .navdiv{
+        display:flex;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .navdiv a{
+        padding: 20px;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 25px;
+        font-size: 20px;
+    }
+    .backdiv{
+        background-image: url(train.jpg) ;
+        height: 850px;
+        width:100%;
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <img src="railways.png" height="75px" width="75px">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Register</li>
+                <li>Login</li>
+                <li>logout</li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="backdiv">
+        <div class="formdiv">
+            <div class="firstrow">
+                <i class="fa-solid fa-file" style="padding-top: 20px; margin-left: 50px;"></i>
+                <h5 style="margin-right: 100px;">PNR STATUS</h5>
+                <i class="fa-solid fa-file-import" style="padding-top: 20px; padding-left: 25px;"></i>
+                <h5 style="margin-right: 100px;">CHARTS/VACANCY</h5>
+                
+            </div>
+            <div class="formmain">
+                <h1 style="text-align: center; color:rgb(20, 4, 114) ;background-color: white;" >BOOK TICKET</h1>
+                <form >
+                    <table class="table1">
+                        <tr>
+                            <td><label for="from">From: </label></td>
+                            <td><input type="text" id="from"  placeholder="From" style="width:200px; height:25px"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="to">To: </label></td>
+                            <td><input type="text" id="to"  placeholder="To" style="width:200px; height:25px"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="date">DD/MM/YYYY: </label></td>
+                            <td><input type="date" id="date" value="date" placeholder="dd/mm/yyyy" style="width:150px;height:25px"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="classes">Classes:</label></td>
+                            <td>
+                                <select id="classes" style="width:150px;height:25px">
+                                    <option>All Classes</option>
+                                    <option>Anubhuti Class</option>
+                                    <option>AC First Class</option>
+                                    <option>Vistadome AC</option>
+                                    <option>AC 2 Tier</option>
+                                    <option>First Class</option>
+                                    <option>AC 3 Tier</option>
+                                    <option>AC 3 Economy</option>
+                                    <option>Sleeper</option>
+                                    <option>Second Sitting</option>
+                                </select>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="general">General</label>
+                            </td>
+                            <td>
+                                <select id="general" style="width:150px;height:25px">
+                                    <option>General</option>
+                                    <option>Ladies</option>
+                                    <option>Lower Berth/SR.Citizen</option>
+                                    <option>Person with disability</option>
+                                    <option>Duty pass</option>
+                                    <option>Tatkal</option>
+                                    <option>Premium Tatkal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="check">
+                                <label > Person With Disability Concession</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="check">
+                                <label> Flexible With Date</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="check">
+                                <label> Train With Available Berth</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="check">
+                                <label> Railway Pass Concession</label>
+                            </td>
+                        </tr>
+                        
+                       
+
+                    </table>
+                    <br><br>
+                    <button style="color: white; font-size: 18px; background-color: rgb(223, 115, 137); border-radius: 90px; margin-left: 100px;">Search</button>
+                    <button style="color:white; background-color: rgb(9, 240, 163);margin-left: 100px;font-size: 15px;border-radius: 75px;">Try booking in Ask DISHA 2.0</button>
+                </form>
+                
+            </div>
+            <div class="formsub" >
+                <a href="https://www.irctc.com/empanelment.html"><p>Please click here for Empanelment for PAD items for Catering.</p></a>
+            </div>
+            
+        </div>
+    </div>
+    <h1 style="text-align: center;">Have you not found the right one?</h1>
+    <h1 style="text-align: center;">Find a service to suitable for you here.</h1>
+    <br><br>
+    <div class="row">
+        <div class="col">
+            <a href="https://www.air.irctc.co.in/"><i class="fa-solid fa-plane sub"></i></a>
+            <p>Flights</p>
+        </div>
+        <div class="col">
+            <a href="https://www.hotels.irctc.co.in/hotels">
+            <i class="fa-solid fa-hotel sub"></i></a>
+            <p>Hotels</p>
+            
+        </div>
+        <div class="col">
+            <a href="https://raildrishti.indianrailways.gov.in/raildrishti/raildrishtiv3/">
+            <i class="fa-solid fa-chart-line sub"></i></a>
+            <p>Rail Drishti</p>
+        </div>
+        <div class="col">
+            <a href="https://www.bus.irctc.co.in/home">
+            <i class="fa-solid fa-bus-simple sub"></i></a>
+            <p>Bus</p>
+        </div>
+        <div class="col">
+            <a href="https://www.irctctourism.com/gallery/">
+            <i class="fa-solid fa-mountain-sun sub"></i></a>
+            <p>Hill Railways</p>
+        </div>
+        <div class="col">
+            <a href="https://www.irctctourism.com/gallery/">
+            <i class="fa-solid fa-file-image sub"></i></a>
+            <p>Gallery</p>
+        </div>
+        
+        
+    </div>
+    <div class="last" id="lastdiv">
+        <p class="lastdivp">Get connected with us on social networks</p>
+        <i class="fa-brands fa-twitter twitter icon"></i>
+        <i class="fa-brands fa-instagram instagram icon"></i>
+        <i class="fa-brands fa-facebook facebook icon"></i>
+        <i class="fa-brands fa-youtube youtube icon"></i>
+        <i class="fa-brands fa-telegram telegram icon"></i>
+
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
