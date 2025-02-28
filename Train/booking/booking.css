@@ -1,0 +1,26 @@
+body {
+    
+    margin: 20px;
+}
+
+h2{
+    background-color: rgb(65, 65, 236);
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+#pay-btn{
+
+    height: 50px;
+    margin-left: 500px;
+    background-color: aliceblue;
+    color: black;
+    font-size: medium;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#pay-btn:hover{
+    background-color: rgb(67, 67, 243);
+    color: white;
+    border: 2px solid blue;
+}

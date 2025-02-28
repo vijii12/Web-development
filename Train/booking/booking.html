@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <title>Booking</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Train Ticket Booking</h1>
+
+    <div id="booking-details">
+        <h2>Train Details</h2>
+        <p><strong>Train Name:</strong><span id="train-name"></span></p>
+        <p><strong>Train Number:</strong><span id="train-number"></span></p>
+        <p><strong>Time:</strong><span id="time"></span></p>
+        <p><strong>Classes:</strong><span id="classes"></span></p>
+        <p><strong>Fare:</strong>₹<span id="fare"></span></p>
+
+    </div>
+
+
+    <div id="passenger-details">
+        <h2>Passenger Details</h2>
+       <strong>Enter Name:</strong>  <input type="text" id="passengerName" placeholder="Enter Passenger Name" required><br><br>
+       <strong>Enter Age:</strong> <input type="number" id="passengerAge" placeholder="Enter Age" required ><br><br>
+       <strong>Select Gender:</strong> <select id="passengerGender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+
+    <div id="payment-section">
+        <h2>Select Payment Method</h2>
+        <input type="radio" name="payment" value="credit-card" checked>Credit Card <br><br>
+
+        <input type="radio" name="payment" value="upi">UPI
+    
+
+        <div id="credit-card-details">
+            <h2>Enter credit card Details</h2>
+           <strong>Credit Card Number:</strong>  <input type="text" id="cardNumber" placeholder="Enter Card Number"><br><br>
+           <strong>Credit Card Name:</strong>  <input type="text" id="cardHolder" placeholder="card holder name"><br><br>
+        </div>
+
+        <div id="upi-details" style="display: none;">
+            <h2>Enter UPI Details</h2>
+            <strong>Enter UPI Id</strong> <input type="text" id="upiId" placeholder="Enter UPI Id">
+        </div>
+    </div>
+
+    <button id="pay-btn">Proceed to Pay</button>
+    <script src="booking.js"></script>
+</body>
+</html>

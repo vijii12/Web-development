@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search.css">
+    <title>Search Available Trains</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Available Trains</h1>
+    
+    <div id="train-list">
+        <h2>Showing results for: <span id="search-info"></span></h2>
+        <table border="1" width="90%" text-align="center">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Train Number</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Duration</th>
+                    <th>Class</th>
+                    <th>Available Seats</th>
+                    <th>Fare</th>
+                    <th>Book</th>
+                </tr>
+            </thead>
+            <tbody id="train-results">
+                <h2 ></h2>
+                <!-- Train data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="search.js"></script>
+</body>
+</html>
